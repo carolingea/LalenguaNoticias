@@ -33,7 +33,10 @@
             <!-- Hover -->
             <link href="<?php echo get_template_directory_uri(); ?>/css/hover-min.css" rel="stylesheet" type="text/css"/>
             
-            
+            <!-- Fuentes -->
+            <link href="<?php echo get_template_directory_uri(); ?>/fonts/RobotoSlab-Regular.ttf" rel="stylesheet">
+        
+<!--            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">-->
             <?php wp_head(); ?>
             <script>
             // conditionizr.com
@@ -50,6 +53,11 @@
             <div class="principal">
                 <!-- header -->
                 <header class="header clear" role="banner">
+                    <div class="barra_busqueda">
+                        <?php get_template_part('searchform'); ?>
+                    </div>
+                    
+                    
                     <!-- logo -->
                     <div class="logo">
                         <a href="<?php echo home_url(); ?>">
