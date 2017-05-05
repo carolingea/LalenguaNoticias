@@ -1,0 +1,275 @@
+@import 'compass';
+
+@font-face {
+  font-family: 'focuswp';
+  src: url('../fonts/fontello.eot?73816224');
+  src: url('../fonts/fontello.eot?73816224#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?73816224') format('woff2'),
+       url('../fonts/fontello.woff?73816224') format('woff'),
+       url('../fonts/fontello.ttf?73816224') format('truetype'),
+       url('../fonts/fontello.svg?73816224#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+div.focuswp-slider{
+	position: relative;
+	padding: 0px;
+	margin: 5px 0px;
+	display: block;
+	width: 100%;
+	clear: both;
+	@include box-sizing( border-box );
+	visibility: hidden;
+	&:after{
+		display: none;
+	}
+	&:before{
+		display: none;
+	}
+	.focuswp-clear{
+		clear: both;
+	}
+	.focusSlides_tabs{
+		display: none !important;
+	}
+	.focuswp-slide{
+		display: block;
+		width: 100%;
+	}
+	.focuswp-icon{
+		font-family: 'focuswp';
+		font-style: normal;
+		font-weight: normal;
+		speak: none;
+
+		display: inline-block;
+		text-decoration: inherit;
+		text-align: center;
+
+		font-variant: normal;
+		text-transform: none;
+
+		line-height: 1em;
+		margin-left: .2em;
+		-webkit-font-smoothing: antialiased;
+  		-moz-osx-font-smoothing: grayscale;
+	}
+	.focuswp-slides{
+		.focuswp-inner{
+			width: 100%;
+			height: auto;
+			position: relative;
+			background: #fff;
+			border: solid 1px #ECECEC;
+			@include inline-block();
+		}
+		.focuswp-head{
+			// @include inline-block();
+			width: 100%;
+			padding: 0 0 0 25px;
+			border-bottom: solid 1px #ECECEC;
+			@include box-shadow( 0 1px 1px 0 rgba(240, 240, 240, 0.26) );
+			display: table;
+			height: 100%;
+			&.focuswp-headright-vertical{
+				.focuswp-headleft{
+					span{
+						padding-right: 8px;
+					}
+				}
+				.focuswp-headright{
+					width: 55px;
+					button{
+						display: block;
+						width: 100%;
+						height: 50%;
+						min-height: 40px;
+						&.fsprev{
+							border-bottom: solid 1px #ECECEC;
+						}
+					}
+				}
+			}
+		}
+		.focuswp-headleft{
+			font-size: 14px;
+			// line-height: 1.8;
+			font-weight: bold;
+			// width: 50%;
+			text-align: left;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+			display: table-cell;
+			vertical-align: middle;
+			span{
+				padding: 10px 0px;
+				display: block;
+				@include box-sizing( border-box );
+			}
+		}
+		.focuswp-headright{
+			display: table-cell;
+			width: 120px;
+			text-align: right;
+			height: 100%;
+			position: relative;
+			button{
+				text-align: center;
+				font-size: 0;
+				line-height: 1.8;
+				padding: 0px 20px;
+				margin: 0px !important;
+				text-align: center;
+				background: transparent;
+				color: #B1BFCC;
+				border: none;
+				border-radius: 0 !important;
+				-webkit-transition: .2s ease-in-out;
+				-moz-transition: .2s ease-in-out;
+				transition: .2s ease-in-out;
+				border-left: solid 1px #ECECEC;
+				@include inline-block();
+				min-height: 100%;
+				overflow: auto;
+				@include box-sizing( border-box );
+				&:before{
+					font-family: 'focuswp';
+					font-size: 20px;
+					line-height: 1.8;
+				}
+				&.fsprev{
+					&:before{
+						content: "\e803";
+					}
+				}
+				&.fsnext:before{
+					content: "\e802";
+				}
+				&:hover{
+					color: #283037;
+				}
+				&:focus, &:active{
+					outline: none;
+					@include box-shadow( inset 0 0 5px#888 );
+				}
+			}
+		}
+		.focuswp-content{
+			header{
+				padding: 25px 25px 0px 25px;
+				.focuswp-title{
+					margin: 0px 0px 10px;
+					padding: 0px;
+				}
+			}
+			.focuswp-entry{
+				padding: 0px 25px 25px 25px;
+			}
+			h3{
+				a{
+					text-decoration: none;
+					@include box-shadow(none);
+				}
+			}
+			.wp-post-image{
+				margin: 0px;
+				padding: 0px;
+				line-height: 0px;
+				border: 0px;
+				width: 100%;
+				max-width: 100%;
+
+				&:before, &:after{
+					display: none;
+				}
+			}
+		}
+		.focuswp-meta{
+			display: block;
+			clear: both;
+			width: 100%;
+			margin: 5px 0px 15px;
+			font-size: 0.8em;
+			line-height: 1em;
+			a{
+				text-decoration: none;
+				@include box-shadow(none);
+				@include opacity(0.7);
+			}
+			&, a{
+				color: #000;
+			}
+			.focuswp-author, .focuswp-comment{
+				@include inline-block;
+			}
+			.focuswp-author{
+				padding-right: 7px;
+				// border-right: 1px solid rgba( 0, 0, 0, 0.3 );
+			}
+			.focuswp-date{
+				padding-left: 7px;
+			}
+		}
+		.focuswp-more{
+			display: block;
+			width: 100%;
+			margin: 20px 0px 0px;
+			padding: 0px;
+			a{
+				font-weight: bold;
+				text-decoration: none;
+				padding: 0px;
+				margin: 0px;
+				span{
+					&:before{
+						font-family: 'focuswp';
+						content: "\e802";
+					}
+				}
+			}
+		}
+	}
+
+	//pager
+	.focusSlides_pager{
+		list-style: none !important;
+		padding: 0px !important;
+		margin: 0px !important;
+		text-align: center;
+		z-index: 50;
+		position: relative;
+		clear: both;
+		display: block;
+		width: 100%;
+		li{
+			list-style: none !important;
+			line-height: 7px;
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+			@include inline-block();
+			&:last-child, &:first-child{
+				margin: 0px;
+				padding: 0px;
+				border: 0px;
+			}
+			a{
+				text-decoration: none !important;
+				@include border-radius( 50% );
+			    margin: 0 4px;
+			    width: 6px;
+				height: 6px;
+			    background: #3a3a3a;
+				@include inline-block();
+				color: transparent;
+				@include opacity(0.4);
+			}
+			&.focusSlides_here{
+				a{
+					@include opacity(1);
+				}
+			}
+		}
+	}
+}

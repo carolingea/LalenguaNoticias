@@ -1,0 +1,55 @@
+@import "compass";
+
+.mce-focuswp-mce-btn-icon{
+    display: none !important;
+}
+.focuswp-toolbar-grp{
+    background: #f5f5f5;
+    padding: 0;
+    margin-top: -32px;
+    border: 1px solid #a0a5aa;
+    @include border-radius( 2px );
+    @include box-shadow( 0 1px 3px rgba( 0, 0, 0, 0.15 ) );
+    @include box-sizing( border-box );
+    @include user-select( none );
+    max-width: 98%;
+    z-index: 100100;
+    &:after, &:before{
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent;
+        content: "";
+    }
+    &:before{
+        bottom: -9px;
+        border-top-color: #a0a5aa;
+        border-width: 9px 9px 0;
+        margin-left: -9px;
+    }
+    &:after{
+        bottom: -8px;
+        border-top-color: #f5f5f5;
+        border-width: 8px 8px 0;
+        margin-left: -8px;
+    }
+    div{
+        padding: 2px 3px;
+        font-size: 20px;
+        line-height: 20px;
+        cursor: pointer;
+        color: #555d66;
+        text-align: center;
+        overflow: visible;
+        -webkit-appearance: none;
+        margin: 2px;
+        border: 1px solid transparent;
+        @include border-radius( 2px );
+        &:hover{
+            border-color: #555d66;
+        }
+    }
+}
