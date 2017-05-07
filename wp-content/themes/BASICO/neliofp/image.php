@@ -23,7 +23,7 @@ $close_link = '</a>';
 		<?php
 		echo $open_link;
 		//echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
-                echo get_the_post_thumbnail( $post->ID, 'style=max-width:100%;height:auto;' );
+                echo the_post_thumbnail(array(500,400));
 		echo $close_link;
 		?>
 	</div>
