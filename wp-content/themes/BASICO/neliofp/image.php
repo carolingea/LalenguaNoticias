@@ -18,10 +18,12 @@ $close_link = '</a>';
 
 <article class="post-<?php echo $post->ID; ?> post type-post status-publish entry" itemscope="itemscope"><?php
 	if ( has_post_thumbnail( $post->ID ) ) { ?>
-	<div class="featured-image alignleft">
+<!--	<div class="featured-image alignleft">-->
+        <div class="">
 		<?php
 		echo $open_link;
-		echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
+		//echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
+                echo get_the_post_thumbnail( $post->ID, 'style=max-width:100%;height:auto;' );
 		echo $close_link;
 		?>
 	</div>

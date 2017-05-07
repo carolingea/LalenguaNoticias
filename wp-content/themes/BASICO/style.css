@@ -79,16 +79,20 @@ input:focus {
     text-align: center;
 }
 
-.menugeneral ul{
-/*    border-top: 1px #CECECE solid;
-    padding: 15px 0px;
-    border-bottom: 1px #CACACA solid;*/
-}
-.menugeneral ul li{
-    display: inline;
-/*    margin: 0 15px;*/
+.menugeneral ul {
+    margin: 20px;
+    border-top: 1px dashed #CECECE;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #CECECE;
 }
 
+.menugeneral ul li{
+    display: inline;
+    display: inline;
+    font-weight: bold;
+    margin: 0px 10px;
+}
 
 /* header */
 .header {
@@ -97,7 +101,7 @@ input:focus {
 /* logo */
 .logo {
     text-align: center;
-    margin: 10px 0;
+    margin-top: 40px;
 }
 .logo-img {
 
@@ -140,6 +144,39 @@ a h2{
     font-family: 'Roboto Slab', serif;
     font-size:16px;
 }
+
+.post .author{
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+.post .date{
+    font-size: 10px;
+    margin-top: 6px;
+}
+/* Títulos post */
+.post h2 a{
+    font-weight: bold;
+    font-size:20px;
+    font-family: 'Roboto', serif;
+}
+.post {
+    font-size:16px;
+    font-family: 'Roboto', serif;
+    color:#000000;
+    margin-top: 6px;
+/*    border-bottom: 1px dashed #CECECE;*/
+    padding-bottom: 12px;
+}
+/* Enlave ver artículo */
+.post a.view-article{
+    font-weight: bold;
+}
+
+.post .miniatura{
+    margin-top: 7px;
+}
+
 
 /*------------------------------------*\
     PAGES
