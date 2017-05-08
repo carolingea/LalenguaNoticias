@@ -124,7 +124,7 @@ input:focus {
 \*------------------------------------*/
 .barra_busqueda{
     height: 35px;
-    background: green;
+    /*background: green;*/
     color: white;
     vertical-align: middle;
     padding: 5px 0px;

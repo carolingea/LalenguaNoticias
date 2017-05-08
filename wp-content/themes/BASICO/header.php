@@ -57,11 +57,10 @@
                 <?php get_template_part('searchform'); ?>
             </div>
 
-
             <!-- logo -->
             <div class="logo">
                 <a href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo.png" height="80px" alt="Logo" class="logo-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo1.png" height="80px" alt="Logo" class="logo-img">
                 </a>
             </div>
             <!-- /logo -->

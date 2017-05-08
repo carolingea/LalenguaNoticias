@@ -2,10 +2,13 @@
 
 <main role="main">
     <div class="container">
-        <div class="row" style="border:1px solid">
+        
+        <div class="row">
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="col-lg-8 col-md-8 col-xs-8">
-                <?php dynamic_sidebar('destacado'); ?>
+                <?php  //query_posts("category_name=extraordinaria"); ?>
+                <?php //get_template_part('extraordinaria'); ?>
+                
             </div>
             <div class="col-lg-4 col-md-4 col-xs-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -16,12 +19,24 @@
             
         </div>
         
+        
         <!-- Columna de noticias de 3-->
         <div class="row">
+            <div style="margin-top:25px"></div>
+            
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="col-lg-8 col-md-8 col-xs-8">
-                    <?php //_e( 'Latest Posts', 'html5blank' ); ?>
-                    <?php get_template_part('loop'); ?>
+                    
+                    <div class="art-home col-lg-6 col-md-6 col-xs-6">
+                        <?php  query_posts("category_name=bogota"); ?>
+                        <?php get_template_part('loop'); ?>
+                    </div>
+                    
+                     <div class="art-home col-lg-6 col-md-6 col-xs-6">
+                        <?php  query_posts("category_name=colombia,politica"); ?>
+                        <?php get_template_part('loop'); ?>
+                    </div>
+                   
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-4">
                     <!-- Barra lateral derecha-->
