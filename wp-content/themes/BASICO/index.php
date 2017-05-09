@@ -7,7 +7,7 @@
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="col-lg-8 col-md-8 col-xs-8">
                 <?php  //query_posts("category_name=extraordinaria"); ?>
-                <?php //get_template_part('extraordinaria'); ?>
+                <?php dynamic_sidebar("Destacado") //get_template_part('extraordinaria'); ?>
                 
             </div>
             <div class="col-lg-4 col-md-4 col-xs-4">
