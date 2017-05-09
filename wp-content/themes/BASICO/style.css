@@ -140,10 +140,7 @@ form.search {
 }
 
 /* POST ARTICULOS */
-a h2{
-    font-family: 'Roboto Slab', serif;
-    font-size:16px;
-}
+
 
 .post .author{
     font-size: 10px;
@@ -157,16 +154,20 @@ a h2{
 /* Títulos post */
 .post h2 a{
     font-weight: bold;
-    font-size:20px;
-    font-family: 'Roboto', serif;
+    font-size:1.3125rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+/*    font-family: 'Roboto', serif;*/
 }
 .post {
-    font-size:16px;
-    font-family: 'Roboto', serif;
+    font-size:.875rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
     color:#000000;
-    margin-top: 6px;
-/*    border-bottom: 1px dashed #CECECE;*/
-    padding-bottom: 12px;
+    line-height: 20px;
+    margin-top: 13px;
+    line-height: 20px;
+    border-bottom: 1px dashed #CECECE;
+    padding-bottom: 20px;
+    
 }
 /* Enlave ver artículo */
 .post a.view-article{

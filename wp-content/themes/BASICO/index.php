@@ -10,6 +10,7 @@
                 <?php dynamic_sidebar("Destacado") //get_template_part('extraordinaria'); ?>
                 
             </div>
+            
             <div class="col-lg-4 col-md-4 col-xs-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Sed feugiat et neque a condimentum. 
@@ -27,18 +28,20 @@
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="col-lg-8 col-md-8 col-xs-8">
                     
-                    <div class="art-home col-lg-6 col-md-6 col-xs-6">
+                    <div class="art-home col-lg-5 col-md-5 col-xs-5">
                         <?php  query_posts("category_name=bogota"); ?>
                         <?php get_template_part('loop'); ?>
                     </div>
                     
-                     <div class="art-home col-lg-6 col-md-6 col-xs-6">
+                    <div></div>
+                    
+                    <div class="art-home col-lg-5 col-md-5 col-xs-5">
                         <?php  query_posts("category_name=colombia,politica"); ?>
                         <?php get_template_part('loop'); ?>
                     </div>
                    
                 </div>
-                <div class="col-lg-4 col-md-4 col-xs-4">
+                <div class="col-lg-5 col-md-5 col-xs-5">
                     <!-- Barra lateral derecha-->
                     <?php get_template_part('barra_derecha'); ?>
 

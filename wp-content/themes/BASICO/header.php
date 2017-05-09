@@ -35,8 +35,8 @@
 
     <!-- Fuentes -->
     <link href="<?php echo get_template_directory_uri(); ?>/fonts/RobotoSlab-Regular.ttf" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/fonts/merriweather.css" rel="stylesheet" type="text/css"/>
 
-<!--            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">-->
     <?php wp_head(); ?>
     <script>
     // conditionizr.com
