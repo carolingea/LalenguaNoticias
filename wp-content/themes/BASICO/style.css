@@ -116,7 +116,12 @@ input:focus {
 }
 /* footer */
 .footer {
+    margin: 10px;
+}
 
+.footer .copyright{
+    text-align: center;
+    margin-top: 15px;
 }
 
 /*------------------------------------*\

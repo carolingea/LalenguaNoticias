@@ -1,17 +1,50 @@
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
 
-			</footer>
-			<!-- /footer -->
 
-		</div>
+
+<!-- footer -->
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-xs-4 col-sm-4 col-md-4">
+
+                <ul class="list-unstyled">
+                    <li><a href="#">Phasellus iaculis neque</a></li>
+                     <li><a href="#">Wstibulum laoreet porttitor sem</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <ul class="list-unstyled">
+                    <li><a href="#">Phasellus iaculis neque</a></li>
+                    <li><a href="#">Wstibulum laoreet porttitor sem</a></li>
+                    <li><a href="#">Sobre mí</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <ul class="list-unstyled">
+                    <li><a href="#">Phasellus iaculis neque</a></li>
+                    <li><a href="#">Phasellus iaculis neque</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">           
+            <p class="copyright">
+                &copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
+                <a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+            </p>
+        </div>
+    </div>    
+        
+
+</footer>
+<!-- /footer -->
+
+
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>

@@ -28,20 +28,20 @@
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="col-lg-8 col-md-8 col-xs-8">
                     
-                    <div class="art-home col-lg-5 col-md-5 col-xs-5">
+                    <div class="art-home col-lg-6 col-md-6 col-xs-5">
                         <?php  query_posts("category_name=bogota"); ?>
                         <?php get_template_part('loop'); ?>
                     </div>
                     
                     <div></div>
                     
-                    <div class="art-home col-lg-5 col-md-5 col-xs-5">
+                    <div class="art-home col-lg-6 col-md-6 col-xs-6">
                         <?php  query_posts("category_name=colombia,politica"); ?>
                         <?php get_template_part('loop'); ?>
                     </div>
                    
                 </div>
-                <div class="col-lg-5 col-md-5 col-xs-5">
+                <div class="col-lg-2 col-md-2 col-xs-2">
                     <!-- Barra lateral derecha-->
                     <?php get_template_part('barra_derecha'); ?>
 
