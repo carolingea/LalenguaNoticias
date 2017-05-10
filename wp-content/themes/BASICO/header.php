@@ -37,6 +37,8 @@
     <link href="<?php echo get_template_directory_uri(); ?>/fonts/RobotoSlab-Regular.ttf" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/fonts/merriweather.css" rel="stylesheet" type="text/css"/>
 
+    <link href="<?php echo get_template_directory_uri(); ?>/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    
     <?php wp_head(); ?>
     <script>
     // conditionizr.com

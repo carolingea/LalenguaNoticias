@@ -178,7 +178,36 @@ form.search {
     margin-top: 7px;
 }
 
+/*--- SINGLE POST --------------------*/
+.single{
+/*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;*/
+    font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+    line-height: 1.75em;
+    
+}
 
+.single h1{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    line-height: 1.0em;
+    flex: 1 0 100%;
+    font-weight: 900;
+    color: #353535;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-size: 1.5em;
+}
+
+    .single p{
+        margin: 0 0 1em;
+    }
+
+    .single .author, 
+    .single .date
+    {
+        color: #696969;
+        flex: 2 1 50%;
+        font-size: .875em;
+        line-height: 1.10em;
+    }
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
