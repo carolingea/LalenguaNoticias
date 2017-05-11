@@ -26,3 +26,5 @@
         <h2><?php _e( 'Lo sentimos, no hay notas', 'html5blank' ); ?></h2>
     </article>
 <?php endif; ?>
+
+

@@ -1,7 +1,3 @@
-
-
-
-
 <!-- footer -->
 <footer class="footer" role="contentinfo">
     <div class="container">
@@ -39,8 +35,6 @@
             </p>
         </div>
     </div>    
-        
-
 </footer>
 <!-- /footer -->
 

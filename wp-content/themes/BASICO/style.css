@@ -188,7 +188,7 @@ form.search {
 /*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;*/
     font-family: 'Merriweather', 'Times New Roman', Times, Serif;
     line-height: 1.75em;
-    
+    font-size:16px;
 }
 
 .single h1{
@@ -198,7 +198,7 @@ form.search {
     font-weight: 900;
     color: #353535;
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
     .single p{
@@ -210,9 +210,43 @@ form.search {
     {
         color: #696969;
         flex: 2 1 50%;
-        font-size: .875em;
+        font-size: .870em;
         line-height: 1.10em;
     }
+    
+    .single main{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+/*---------------------------------
+    Comentarios
+----------------------------------*/
+    
+    .comentarios{
+        border-top: 1px dashed #CECECE; 
+        margin-top: 36px;
+        padding-top: 10px;
+    }
+    
+    .comments ul li{
+        font-size: 12px;
+        font-weight: normal;
+        color: #666666;
+    }
+    
+    .reply-title{
+        font-weight: bold;
+    }
+    
+    .form-submit{
+        text-align: center;
+    }
+    
+    .logged-in-as{
+        text-align: right;
+    }
+    
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
