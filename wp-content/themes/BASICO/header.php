@@ -12,8 +12,8 @@
     <meta name="description" content="<?php bloginfo('description'); ?>">
 
     <!-- Jquery -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/bootstrap-3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/bootstrap-3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
@@ -39,6 +39,8 @@
 
     <link href="<?php echo get_template_directory_uri(); ?>/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     
+    <!--    Slider de noticias-->
+    
     <?php wp_head(); ?>
     <script>
     // conditionizr.com
@@ -48,10 +50,11 @@
         tests: {}
     });
     </script>
-
+    
 </head>
 <body <?php body_class(); ?>>
     <!-- wrapper -->
+    
     <div class="principal">
         <!-- header -->
         <header class="header clear" role="banner">
