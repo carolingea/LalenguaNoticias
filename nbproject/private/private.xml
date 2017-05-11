@@ -5,11 +5,10 @@
         <group>
             <file>file:/D:/xampp/htdocs/lalenguanoticias/wp-content/themes/BASICO/index.php</file>
             <file>file:/D:/xampp/htdocs/lalenguanoticias/wp-content/themes/BASICO/style.css</file>
+            <file>file:/D:/xampp/htdocs/lalenguanoticias/wp-content/themes/BASICO/single.php</file>
             <file>file:/D:/xampp/htdocs/lalenguanoticias/wp-content/themes/BASICO/loop.php</file>
             <file>file:/D:/xampp/htdocs/lalenguanoticias/wp-content/themes/BASICO/header.php</file>
-            <file>file:/D:/xampp/htdocs/lalenguanoticias/wp-content/themes/BASICO/extraordinaria.php</file>
-            <file>file:/D:/xampp/htdocs/lalenguanoticias/wp-content/themes/BASICO/neliofp/image.php</file>
-            <file>file:/D:/xampp/htdocs/lalenguanoticias/wp-content/themes/BASICO/functions.php</file>
+            <file>file:/D:/xampp/htdocs/lalenguanoticias/wp-content/themes/BASICO/footer.php</file>
         </group>
     </open-files>
 </project-private>

@@ -25,6 +25,10 @@
                 </div>
             </div>
             
+            <span class="comments">
+                <?php //if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?>
+            </span>
+            
             <main>
                 <section>
                     <article id="post-<?php the_ID(); ?>" style="text-align: center">
@@ -40,28 +44,43 @@
                 <?php the_content(); // Dynamic Content ?>
                 <?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
             </div>
-                
-            <span class="comments">
-                <?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?>
-            </span>
-            <p>
-                <?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?> 
-            </p>
-            <p>
-                <?php _e( 'Esta nota fué escrita por ', 'html5blank' ); the_author(); ?>
-            </p>
-            <?php edit_post_link(); // Always handy to have Edit Post Links available ?><?php comments_template(); ?><!-- /article --><?php endwhile; ?><?php else: ?><!-- article -->
+            
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="author">
+                        <i class="fa fa-user-o" aria-hidden=""></i>
+                        <?php _e( 'Escrito por ', 'html5blank' ); the_author_posts_link(); //the_author(); ?>
+                    </span>
+                </div>
+                <div class="col-md-6" style="text-align: right">
+                    <span class="date">
+                        <il class="fa  fa-calendar-times-o"></il>
+                        <?php _e( 'Categorías: ', 'html5blank' ); the_category(', '); // Separated by commas ?> 
+                    </span>
+                </div>
+            </div>
+            
+            <?php //edit_post_link(); ?>
+            
+            <div class="comentarios">
+                <?php comments_template(); ?>
+            </div>
+            
+            <?php endwhile; ?>
 
-            <article>
+        <?php else: ?>
 
-            </article>
             <h1>
-                <?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?>
+                <?php _e( 'Pronto tendremos algo para ti.', 'html5blank' ); ?>
             </h1>
 
             <?php endif; ?>
 
-            <?php get_sidebar(); ?><?php get_footer(); ?>
+            <?php get_sidebar(); ?>
+            
         </div>
+        <?php if ( function_exists( "get_yuzo_related_posts" ) ) { get_yuzo_related_posts(); } ?>
+        <?php //get_footer(); ?>
     </body>
 </html>
