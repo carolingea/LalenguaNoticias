@@ -1,0 +1,14 @@
+
+#sliderHome h3{
+    display: inline-block;
+    margin: 0;
+    color: #FFFFFF;
+    text-shadow: 3px 2px 4px rgb(0, 0, 0);
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 28px;
+    padding-top: 10px;
+    width: 100%;
+    
+}
+
