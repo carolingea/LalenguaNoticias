@@ -80,7 +80,7 @@
             <?php get_sidebar(); ?>
             
         </div>
-        <?php if ( function_exists( "get_yuzo_related_posts" ) ) { get_yuzo_related_posts(); } ?>
+        
         <?php //get_footer(); ?>
     </body>
 </html>
