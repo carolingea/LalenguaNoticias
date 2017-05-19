@@ -45,6 +45,7 @@
                 <?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
             </div>
             
+            <div style="margin-top: 30px"></div>
             
             <div class="row">
                 <div class="col-md-6">
@@ -67,6 +68,10 @@
                 <?php comments_template(); ?>
             </div>
             
+            <div class="relacionados">
+                <?php get_template_part("relacionados") ?>
+            </div>
+            
             <?php endwhile; ?>
 
         <?php else: ?>
@@ -82,5 +87,6 @@
         </div>
         
         <?php //get_footer(); ?>
+        
     </body>
 </html>
