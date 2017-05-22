@@ -8,7 +8,8 @@
             </figure>
         </div>
         <div class="tab-post-title">
-            <h6><a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+            <h6>
+                <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
             </h6>
             <span><?php the_excerpt() ?></span>
         </div>

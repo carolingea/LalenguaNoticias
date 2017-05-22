@@ -23,7 +23,7 @@
         display: none;
     }
 </style>
-<div class="" style="width: 90%">
+<div class="" style="width: 100%">
     <div id="sliderHome">
         <?php  query_posts("category_name=extraordinarias"); ?>
         <?php if (have_posts()): while (have_posts()) : the_post(); ?>
