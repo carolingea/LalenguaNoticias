@@ -12,9 +12,8 @@
             </div>
             
             <div class="col-lg-4 col-md-4 col-xs-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed feugiat et neque a condimentum. 
-                Mauris dignissim enim sagittis ante posuere, vel aliquam arcu sagittis. 
+                <?php query_posts('blog=wordpress&showposts=3'); ?>
+                <?php get_template_part("post1") ?>
             </div>
             </div>
             

@@ -63,14 +63,50 @@
             </div>
             
             <?php //edit_post_link(); ?>
-            
-            <div class="comentarios">
-                <?php comments_template(); ?>
-            </div>
+            <div style="margin-top: 20px"></div>
             
             <div class="relacionados">
-                <?php get_template_part("relacionados") ?>
+                
+                <div class="populat-post-tab">
+                    
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#relacionados" aria-controls="relacionados" role="tab" data-toggle="tab">Relacionados</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Últimas</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Más vistas</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <div role="tabpanel" class="tab-pane active" id="relacionados">
+                            <div class="tab-post-list">
+                                <?php get_template_part('relacionados'); ?>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            <div class="tab-post-list">
+                                
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <div class="tab-post-list">
+                                <div class="">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div style="margin-top: 20px"></div>
+            
+            <?php comments_template(); ?>
             
             <?php endwhile; ?>
 
