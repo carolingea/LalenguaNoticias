@@ -183,6 +183,73 @@ form.search {
     margin-top: 7px;
 }
 
+.post-categories{
+    
+}
+.post-categories li{
+    display: inline;
+}
+
+/***************POST1********************/
+/* image thumbnail */
+.thumb {
+    display: block;
+	width: 100%;
+	margin: 0;
+}
+
+/* Style to article Author */
+.by-author {
+	font-style: italic;
+	line-height: 1.3;
+	color: #aab6aa;
+}
+
+/* Main Article [Module]
+-------------------------------------
+* Featured Article Thumbnail
+* have a image and a text title.
+*/
+.featured-article {
+	width: 482px;
+	height: 350px;
+	position: relative;
+	margin-bottom: 1em;
+}
+
+.featured-article .block-title {
+	/* Position & Box Model */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	/* background */
+	background: rgba(0,0,0,0.7);
+	/* Width/Height */
+	padding: .5em;
+	width: 100%;
+	/* Text color */
+	color: #fff;
+}
+
+.featured-article .block-title h2 {
+	margin: 0;
+}
+
+/* Featured Articles List [BS3]
+--------------------------------------------
+* show the last 3 articles post
+*/
+
+.main-list {
+	padding-left: .5em;
+}
+
+.main-list .media {
+	padding-bottom: 1.1em;
+	border-bottom: 1px solid #e8e8e8;
+}
+
 /*--- SINGLE POST --------------------*/
 .single{
 /*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;*/
@@ -414,91 +481,4 @@ a img.aligncenter {
 /*-----------------------------------------------
     RELACIONADOS
 -----------------------------------------------*/
-/* Post tab custom css  */
-.populat-post-tab {
-    border: 1px solid #e0e0e0;
-}
 
-.populat-post-tab .nav-tabs {
-    border: none;
-}
-
-.populat-post-tab .nav-tabs > li {
-    width: 33.33333333333333%;
-    text-align: center;
-}
-
-.populat-post-tab .nav-tabs > li a {
-    background: #f0f5f7;
-    margin-right: 0;
-    border: 1px solid #e0e0e0;
-    border-radius: 0;
-    display: block;
-    padding: 10px 0;
-    font-weight: 700;
-    font-size: 15px;
-    color: #3a3c41;
-    transition: all 0.01s;
-}
-
-.populat-post-tab .nav-tabs > li.active a {
-    border-top: 2px solid #018EBB;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    background: #ffffff;
-}
-
-.tab-post-list-wrap {
-    margin: 15px 0;
-    padding: 0 35px;
-}
-
-.tab-post-thumb {
-    margin: 0 15px 0 0;
-}
-
-.tab-post-thumb figure {
-    width: 65px;
-}
-
-.tab-post-thumb figure img{
-    max-width: 70px;
-}
-
-.tab-post-title h6 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-    margin-bottom: 5px;
-}
-
-.tab-post-title span {
-    font-size: 12px;
-    color: #999ca5;
-}
-
-.tab-post-list ul{
-    list-style: none;
-}
-
-.tab-post-list ul li:before {
-    content: "";
-    width: 2px;
-    height: 8px;
-    padding: 0 4px;
-    margin-right: 5px;
-    background: #018EBB;
-    display: inline-block;
-}
-
-.tab-post-list ul li small {
-    display: block;
-}
-
-.tab-post-list ul li small abbr {
-    font-size: 11px;
-    line-height: 20px;
-    text-decoration: none;
-    border: none;
-}tab-post-thumb

@@ -1,23 +1,27 @@
+
+<ul class="media-list main-list">
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <div class="tab-post-list-wrap clearfix">
-        <div class="tab-post-thumb pull-left">
-            <figure>
-                <a href="<?php the_permalink() ?>">
-                    <img src="<?php the_post_thumbnail_url() ?>" alt="<?php the_title() ?>">
-                </a>
-            </figure>
+    
+    <li class="media">
+        
+        <a class="pull-left" href="<?php the_permalink() ?>">
+            <img class="media-object" height="90" width="150" src="<?php the_post_thumbnail_url() ?>" alt="">
+        </a>
+        <div class="media-body">
+            <a class="pull-left" href="<?php the_permalink() ?>"><?php the_title() ?></a> 
+            <br>
+            <il class="fa  fa-calendar-times-o"></il>
+            <?php the_date() ?>
+            <?php the_category() ?>
+            
         </div>
-        <div class="tab-post-title">
-            <h6>
-                <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-            </h6>
-            <span><?php the_excerpt() ?></span>
-        </div>
-    </div>
+    </li>
+      
 <?php endwhile; ?>
+    
 
 <?php else: ?>
-    <article>
-        <h2><?php _e( 'Lo sentimos, no hay notas', 'html5blank' ); ?></h2>
-    </article>
+    
 <?php endif; ?>
+</ul>
+
