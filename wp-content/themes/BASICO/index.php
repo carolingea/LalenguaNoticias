@@ -15,10 +15,8 @@
                 <?php query_posts('blog=wordpress&showposts=3'); ?>
                 <?php get_template_part("post1") ?>
             </div>
-            </div>
-            
+            </div>    
         </div>
-        
         
         <!-- Columna de noticias de 3-->
         <div class="row">
@@ -40,7 +38,7 @@
                     </div>
                    
                 </div>
-                <div class="col-lg-2 col-md-2 col-xs-2">
+                <div class="col-lg-4 col-md-4 col-xs-4">
                     <!-- Barra lateral derecha-->
                     <?php get_template_part('barra_derecha'); ?>
 
@@ -52,9 +50,6 @@
         <div class="paginacion">
             <?php get_template_part('pagination'); ?>
         </div>
-        
-        
-        
         
     </div>
 </main>

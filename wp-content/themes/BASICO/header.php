@@ -24,6 +24,8 @@
     <link href="<?php echo get_template_directory_uri(); ?>/js/jquery-ui-1.12.1/jquery-ui.theme.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo get_template_directory_uri(); ?>/js/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
 
+    <!-- Scrits -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js" type="text/javascript"></script>
     <!-- Angular 1 -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/angular.min.js" type="text/javascript"></script>
 
@@ -32,8 +34,11 @@
 
     <!-- Hover -->
     <link href="<?php echo get_template_directory_uri(); ?>/css/hover-min.css" rel="stylesheet" type="text/css"/>
-
+    
     <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!--    <link href="<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Bold.ttf" rel="stylesheet">-->
     <link href="<?php echo get_template_directory_uri(); ?>/fonts/RobotoSlab-Regular.ttf" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/fonts/merriweather.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo get_template_directory_uri(); ?>/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
@@ -50,26 +55,53 @@
     
 </head>
 <body <?php body_class(); ?>>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <!-- wrapper -->
     
     <div class="principal">
-        <!-- header -->
-        <header class="header clear" role="banner">
-            <div class="barra_busqueda">
+        
+        <nav class="navbar navbar-inverse navbar-toggleable-md" role="navigation">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">La Lengua Noticias</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+              </ul>
                 <?php get_template_part('searchform'); ?>
             </div>
+          </nav>
+        <!-- header -->
+
+       
+        <header class="header clear" role="banner">
+           
 
             <!-- logo -->
             <div class="logo">
                 <a href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo1.png" height="80px" alt="Logo" class="logo-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo.png" height="80px" alt="Logo" class="logo-img">
                 </a>
             </div>
             <!-- /logo -->
 
             <!-- nav -->
             <nav class="nav menugeneral" role="navigation">
-                <?php html5blank_nav(); ?>
+                <?php //wp_nav_menu()  ?>
+                <?php wp_nav_menu( 'MenuPrincipal' ); ?>
+<!--                html5blank_nav();-->
             </nav>
 
             <!-- /nav -->

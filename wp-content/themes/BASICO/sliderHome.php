@@ -5,7 +5,8 @@
     jQuery(document).ready(function($) {
         $('#sliderHome').DrSlider({
             width: '100%',
-            height: '350px'            
+            height: '320px',
+            showNavigation: false
         });
     });
     
@@ -17,6 +18,9 @@
         bottom: 0; 
         left: 0%; 
         opacity: 0.5;
+        font-size: 13px;
+        line-height: 130%;
+        font-weight: bold;    
     }
     
     #sliderHome .view-article{

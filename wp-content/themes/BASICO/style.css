@@ -39,11 +39,11 @@ img {
 	vertical-align:bottom;
 }
 a {
-    color:#093;
+    color:#000000;
     text-decoration:none;
 }
 a:hover {
-    color:#093;
+    color:#000000;
 }
 a:focus {
     outline:#008000;
@@ -75,6 +75,9 @@ input:focus {
 }
 
 /* Menú general superior */
+.sub-menu{
+    display: none;
+}
 .menugeneral{
     text-align: center;
 }
@@ -101,7 +104,7 @@ input:focus {
 /* logo */
 .logo {
     text-align: center;
-    margin-top: 40px;
+/*    margin-top: 40px;*/
 }
 .logo-img {
 
@@ -110,6 +113,22 @@ input:focus {
 .nav {
 
 }
+.principal .navbar{
+    border-radius: 0px;
+    min-height:20px;
+}
+
+.principal .navbar-brand,
+.principal .navbar-nav,
+.principal .active{
+/*    height: 50px;
+    padding: 10px;*/
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+
 /* sidebar */
 .sidebar {
 
@@ -159,20 +178,47 @@ form.search {
 /* Títulos post */
 .post h2 a{
     font-weight: bold;
-    font-size:1.3125rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-/*    font-family: 'Roboto', serif;*/
+    font-size:1.25rem;
+/*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;*/    
+    font-family: "roboto_slab_bold";
 }
 .post {
-    font-size:.875rem;
+    font-size:1.05rem;
+/*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    color:#000000;
+    line-height: 25px;
+    margin-top: 13px;
+    border-bottom: 1px dashed #CECECE;
+    padding-bottom: 20px;
+}
+
+.post1 .titulo{
+    line-height: 125%;
+    margin-top: 2px;
+    font-family: "roboto_slab_regular";
+    font-size: 1.2rem;
+}
+
+
+.post2{
+    font-size:1.0rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
     color:#000000;
     line-height: 20px;
-    margin-top: 13px;
-    line-height: 20px;
-    border-bottom: 1px dashed #CECECE;
-    padding-bottom: 20px;
-    
+}
+
+.post2 li{
+    font-size:1.00rem;
+    padding-bottom: 1.1em;
+    border-bottom: 1px solid #e8e8e8;
+    margin: 13px 0px;
+}
+
+a.post2-link{
+    font-size:1.25rem;
+    font-weight: bold;
+    font-family: "open_sansbold";
 }
 /* Enlave ver artículo */
 .post a.view-article{
@@ -183,8 +229,8 @@ form.search {
     margin-top: 7px;
 }
 
-.post-categories{
-    
+.post-categories li a{
+    color:#666666;
 }
 .post-categories li{
     display: inline;
@@ -247,7 +293,11 @@ form.search {
 
 .main-list .media {
 	padding-bottom: 1.1em;
-	border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.thumbnail{
+    margin-bottom: 15px;
 }
 
 /*--- SINGLE POST --------------------*/
@@ -481,4 +531,23 @@ a img.aligncenter {
 /*-----------------------------------------------
     RELACIONADOS
 -----------------------------------------------*/
+
+ul.post-categories {
+    font-size: 11px;
+}
+
+.post1 .categorias{
+    font-size: 11px;
+    font-family: "open_sansbold";
+}
+
+.fecha{
+    font-family: "open_sansbold";
+    font-size: 9px;
+    color:#aab6aa;
+}
+.post-categories{
+    display: inline;
+}
+
 

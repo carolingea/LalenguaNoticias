@@ -3,11 +3,16 @@
         <h2>
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
         </h2>
-        <div class="category"><?php the_category(); ?></div>
+        <div>
+            <span class="fecha"><?php the_date() ?> | </span>  
+            <span class="categorias"><?php the_category() ?></span> 
+        </div>
+        
         <div class="miniatura">
             <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                    <?php the_post_thumbnail(array(290,250)); // Declare pixel size you need inside the array ?>
+                    <?php  the_post_thumbnail('medium', array('class' => 'thumbnail')); ?>
+                    <?php //the_post_thumbnail(array(290,250)); // Declare pixel size you need inside the array ?>
                 </a>
             <?php endif; ?>
         </div>
