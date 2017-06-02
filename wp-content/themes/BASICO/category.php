@@ -1,18 +1,16 @@
 <?php get_header(); ?>
+<div class="container-fluid">
+    <main role="main">   
+        <section class="single col-md-7 col-md-offset-2">
+            
+            <h1><?php single_cat_title(); ?></h1>
+            
+            <?php get_template_part('categoria_loop'); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
-
-			<h1><?php _e( 'Categories for ', 'html5blank' ); single_cat_title(); ?></h1>
-
-			<?php get_template_part('loop'); ?>
-
-			<?php get_template_part('pagination'); ?>
-
-		</section>
-		<!-- /section -->
-	</main>
+            <?php get_template_part('pagination'); ?>
+        </section>
+    </main>
+</div>
 
 <?php get_sidebar(); ?>
 

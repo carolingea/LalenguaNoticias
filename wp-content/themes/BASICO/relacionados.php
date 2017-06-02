@@ -22,13 +22,11 @@
     $my_query->the_post();
 ?>
 
-<div class="tab-post-list-wrap clearfix">
-    <div class="tab-post-thumb pull-left">
-        <figure>
-            <a href="<?php the_permalink() ?>">
-                <img src="<?php the_post_thumbnail_url() ?>" alt="<?php the_title() ?>">
-            </a>
-        </figure>
+<div class="row">
+    <div class="">
+        <a href="<?php the_permalink() ?>">
+            <img src="<?php the_post_thumbnail_url() ?>" width="60px" height="60px" alt="<?php the_title() ?>">
+        </a>
     </div>
     <div class="tab-post-title">
         <h6>
