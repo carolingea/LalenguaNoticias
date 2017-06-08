@@ -55,16 +55,7 @@
     
 </head>
 <body <?php body_class(); ?>>
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
+       
     
     <!-- wrapper -->
     
@@ -72,24 +63,32 @@
         
         <nav class="navbar navbar-inverse navbar-toggleable-md" role="navigation">
             <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="#">La Lengua Noticias</a>
-              </div>
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Inicio</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
-              </ul>
-                <?php get_template_part('searchform'); ?>
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">La Lengua Noticias</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Inicio</a></li>
+                    <!-- Login de Usuarios -->
+                    <?php 
+                        if (is_user_logged_in()) {
+                            echo '<li><a href="'.wp_logout_url(home_url()).'">Logout</a></li>';
+                        } else {
+                            echo '<li><a href="'.wp_login_url(get_permalink()).'">Login</a></li>';
+                        }
+                    ?>
+                    <li><?php get_template_part('searchform'); ?></li>
+                </ul>
+                <ul nav navbar-nav navbar-right>
+                    
+                    
+                </ul>
+                
             </div>
           </nav>
+        
         <!-- header -->
-
-       
         <header class="header clear" role="banner">
-           
-
-            <!-- logo -->
+           <!-- logo -->
             <div class="logo">
                 <a href="<?php echo home_url(); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo.png" height="80px" alt="Logo" class="logo-img">
@@ -102,11 +101,8 @@
                 <?php //wp_nav_menu()  ?>
                 <?php //wp_nav_menu( 'MenuPrincipal' ); ?>
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-                
-<!--                html5blank_nav();-->
+                <!--                html5blank_nav();-->
             </nav>
-
             <!-- /nav -->
-
         </header>
         <!-- /header -->
