@@ -116,6 +116,7 @@ input:focus {
 .principal .navbar{
     border-radius: 0px;
     min-height:20px;
+    margin-bottom: 0px;
 }
 
 .principal .navbar-brand,
@@ -135,12 +136,22 @@ input:focus {
 }
 /* footer */
 .footer {
-    margin: 10px;
+    padding: 45px 100px;
+    border-top: 1px solid #e8e8e8;
+    background: #f5f5f5;
+    font-size: 13px;
+    color: #818181;
+    overflow:hidden;
 }
 
 .footer .copyright{
     text-align: center;
     margin-top: 15px;
+    font-size: 10px;
+}
+
+footer ul li a{
+    color:#818181;
 }
 
 /*------------------------------------*\
@@ -550,4 +561,6 @@ ul.post-categories {
     display: inline;
 }
 
-
+.form-control {
+     height: 28px;
+}

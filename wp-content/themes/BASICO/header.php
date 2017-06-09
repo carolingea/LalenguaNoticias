@@ -61,19 +61,26 @@
     
     <div class="principal">
         
-        <nav class="navbar navbar-inverse navbar-toggleable-md" role="navigation">
+        <nav class="navbar navbar-toggleable-md" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="#">La Lengua Noticias</a>
+<!--                  <a class="navbar-brand" href="#">La Lengua Noticias</a>-->
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Inicio</a></li>
+<!--                    <li class="active"><a href="#">Inicio</a></li>-->
                     <!-- Login de Usuarios -->
                     <?php 
                         if (is_user_logged_in()) {
-                            echo '<li><a href="'.wp_logout_url(home_url()).'">Logout</a></li>';
+                            
+                            global $current_user;
+                            get_currentuserinfo();
+
+                            echo '<li><a href="'.''.'">Hola '. $current_user->user_login .'!</a></li>';
+                            echo '<li><a href="'.wp_logout_url(home_url()).'">Cerrar</a></li>';
+                            
                         } else {
-                            echo '<li><a href="'.wp_login_url(get_permalink()).'">Login</a></li>';
+                            echo '<li><a href="'. wp_registration_url().'">Registrar</a></li>';
+                            echo '<li><a href="'.wp_login_url(get_permalink()).'">Iniciar</a></li>';
                         }
                     ?>
                     <li><?php get_template_part('searchform'); ?></li>
