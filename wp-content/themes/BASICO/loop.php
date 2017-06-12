@@ -22,7 +22,7 @@
         <div class="comments"><?php //if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></div>
         <?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
         
-        <?php //edit_post_link(); ?>
+        
     </article>
 <?php endwhile; ?>
 

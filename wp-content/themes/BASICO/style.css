@@ -543,6 +543,15 @@ a img.aligncenter {
     RELACIONADOS
 -----------------------------------------------*/
 
+.relacionado{
+    border-bottom: 1px solid rgba(188, 188, 188, 0.22);
+}
+
+.relacionados h3{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
 ul.post-categories {
     font-size: 11px;
 }
@@ -557,10 +566,16 @@ ul.post-categories {
     font-size: 9px;
     color:#aab6aa;
 }
+
+
 .post-categories{
     display: inline;
 }
 
 .form-control {
      height: 28px;
+}
+
+.tab-post-list{
+    margin:10px;
 }

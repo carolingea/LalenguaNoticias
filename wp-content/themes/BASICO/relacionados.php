@@ -1,4 +1,4 @@
-
+<h3>Relacionados</h3>
 <?php
     $orig_post = $post;
     global $post;
@@ -22,17 +22,18 @@
     $my_query->the_post();
 ?>
 
-<div class="row">
+<div class="row relacionado">
     <div class="col-lg-2 col-md-2 col-xs-2">
         <a href="<?php the_permalink() ?>">
-            <img src="<?php the_post_thumbnail_url() ?>" width="60px" height="60px" alt="<?php the_title() ?>">
+            <img class="thumbnail" src="<?php the_post_thumbnail_url() ?>" alt="<?php the_title() ?>">
         </a>
     </div>
     <div class="col-lg-10 col-md-10 col-xs-10">
         <h6>
             <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
         </h6>
-        <span><?php the_date() ?></span>
+        <il class="fa  fa-calendar-times-o"></il> 
+        <span class="fecha"><?php the_date() ?></span>
     </div>
 </div>
 

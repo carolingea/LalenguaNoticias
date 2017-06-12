@@ -43,6 +43,8 @@
     <link href="<?php echo get_template_directory_uri(); ?>/fonts/merriweather.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo get_template_directory_uri(); ?>/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5004e44d66e58fb5"></script> 
+    
     <!--    Slider de noticias-->
     
     <?php wp_head(); ?>
@@ -56,7 +58,6 @@
 </head>
 <body <?php body_class(); ?>>
        
-    
     <!-- wrapper -->
     
     <div class="principal">

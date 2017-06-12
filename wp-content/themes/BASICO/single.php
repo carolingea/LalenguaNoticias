@@ -56,7 +56,10 @@
                 </div>
                 <div class="col-md-6" style="text-align: right">
                     <span class="date">
+                        <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+                        <div class="addthis_inline_share_toolbox_kh1o"></div>
                         <il class="fa  fa-calendar-times-o"></il>
+                        
                         <?php _e( 'Categorías: ', 'html5blank' ); the_category(', '); // Separated by commas ?> 
                     </span>
                 </div>
@@ -66,43 +69,7 @@
             <div style="margin-top: 20px"></div>
             
             <div class="relacionados">
-                
-                <div class="populat-post-tab">
-                    
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#relacionados" aria-controls="relacionados" role="tab" data-toggle="tab">Relacionados</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Últimas</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Más vistas</a>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content">
-
-                        <div role="tabpanel" class="tab-pane active" id="relacionados">
-                            <div class="tab-post-list">
-                                <?php get_template_part('relacionados'); ?>
-                            </div>
-                        </div>
-
-                        <div role="tabpanel" class="tab-pane" id="profile">
-                            <div class="tab-post-list">
-                                
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="messages">
-                            <div class="tab-post-list">
-                                <div class="">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php get_template_part('relacionados'); ?>
             </div>
             <div style="margin-top: 20px"></div>
             
